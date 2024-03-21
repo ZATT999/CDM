@@ -24,13 +24,13 @@ links.forEach(link => {
     });
 
     link.addEventListener('click', (event) => {
-        event.preventDefault(); // Evita el comportamiento predeterminado de navegación
+        event.preventDefault();
         const sectionId = link.getAttribute('href').slice(1);
         const section = document.getElementById(sectionId);
         if (section) {
             const sectionTop = section.offsetTop;
-            window.scrollTo({ top: sectionTop, behavior: 'smooth' }); // Desplazamiento suave a la sección
-            activateLink(link); // Activa el enlace del menú después del desplazamiento
+            window.scrollTo({ top: sectionTop, behavior: 'smooth' });
+            activateLink(link); 
         }
     });
 });
@@ -65,4 +65,85 @@ document.querySelectorAll('.act').forEach(button => {
       cerrarButton.parentElement.classList.remove('visible');
     });
   });
-  
+  var videosList = [
+    {
+        title: "Robos En Araboth Roleplay | mas de 1m de dolares",
+        thumbnail: "assets/descarga.jpg",
+        videoUrl: "https://www.youtube.com/embed/W_mHg9yqz8w?si=2eSDasi65WsEDMQJ&controls=0"
+    },
+    {
+        title: "Robos En Araboth Roleplay | mas de 1m de dolares",
+        thumbnail: "assets/descarga.jpg",
+        videoUrl: "https://www.youtube.com/embed/W_mHg9yqz8w?si=2eSDasi65WsEDMQJ&controls=0"
+    },
+    {
+        title: "Robos En Araboth Roleplay | mas de 1m de dolares",
+        thumbnail: "assets/descarga.jpg",
+        videoUrl: "https://www.youtube.com/embed/W_mHg9yqz8w?si=2eSDasi65WsEDMQJ&controls=0"
+    },
+    {
+        title: "Robos En Araboth Roleplay | mas de 1m de dolares",
+        thumbnail: "assets/descarga.jpg",
+        videoUrl: "https://www.youtube.com/embed/W_mHg9yqz8w?si=2eSDasi65WsEDMQJ&controls=0"
+    },
+    {
+        title: "Robos En Araboth Roleplay | mas de 1m de dolares",
+        thumbnail: "assets/descarga.jpg",
+        videoUrl: "https://www.youtube.com/embed/W_mHg9yqz8w?si=2eSDasi65WsEDMQJ&controls=0"
+    },
+    {
+        title: "Robos En Araboth Roleplay | mas de 1m de dolares",
+        thumbnail: "assets/descarga.jpg",
+        videoUrl: "https://www.youtube.com/embed/W_mHg9yqz8w?si=2eSDasi65WsEDMQJ&controls=0"
+    },
+    {
+        title: "Robos En Araboth Roleplay | mas de 1m de dolares",
+        thumbnail: "assets/descarga.jpg",
+        videoUrl: "https://www.youtube.com/embed/W_mHg9yqz8w?si=2eSDasi65WsEDMQJ&controls=0"
+    },
+    {
+        title: "Robos En Araboth Roleplay | mas de 1m de dolares",
+        thumbnail: "assets/descarga.jpg",
+        videoUrl: "https://www.youtube.com/embed/W_mHg9yqz8w?si=2eSDasi65WsEDMQJ&controls=0"
+    },
+];
+
+function createVideoArticle(video) {
+    let article = document.createElement("article");
+    article.className = "card-video";
+
+    let img = document.createElement("img");
+    img.src = video.thumbnail;
+    img.className = "img-video";
+    img.alt = "Thumbnail del video";
+
+    let title = document.createElement("p");
+    title.className = "title-videos";
+    title.textContent = video.title;
+    
+    let iframe = document.createElement("iframe");
+    iframe.className = "video";
+    iframe.width = "560";
+    iframe.height = "315";
+    iframe.src = video.videoUrl;
+    iframe.title = "YouTube video player";
+    iframe.frameborder = "0";
+    iframe.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share";
+    iframe.referrerpolicy = "strict-origin-when-cross-origin";
+    iframe.allowfullscreen = true;
+    
+    article.appendChild(img);
+    article.appendChild(title);
+    article.appendChild(iframe);
+    
+    return article;
+}
+
+var videosContainer = document.getElementById("content-videos");
+let videosmodal = document.querySelector(".content-modal")
+
+videosList.forEach(function(video) {
+    var article = createVideoArticle(video);
+    videosContainer.appendChild(article);
+});
+

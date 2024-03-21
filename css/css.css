@@ -412,3 +412,30 @@ text-wrap: balance;
  margin-bottom: 10px;
  margin-top: 20px;
 }
+.videos{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.content-videos{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 800px;
+  flex-flow: wrap;
+  margin:auto;
+}
+.video{
+  display: none;
+}
+.img-video{
+  border-radius: 8px;
+  width:250px;
+  cursor: pointer;
+}
+.card-video{
+  width:250px;
+}
+.title-videos{
+  padding: 1px;
+}
