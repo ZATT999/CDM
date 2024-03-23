@@ -4,8 +4,10 @@
   
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
-  
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 49%, rgba(255,255,255,1) 100%);
+    background-repeat: no-repeat;
+background-attachment: fixed;  
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
