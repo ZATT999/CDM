@@ -36,6 +36,9 @@
     cursor: pointer;
     transition: border-color 0.25s;
   }
+  a{
+    text-decoration: none;
+  }
   
   button:hover {
     border-color: #646cff;
