@@ -29,10 +29,8 @@
   width: 60px;
   height: 30px;
   text-align: center;
-  &:hover
-  {
-    cursor: pointer;
-    border: 2px solid #c91e1e;
+  cursor: pointer;
+  &:hover{
     background-color: #c92323;
   }
 }
@@ -42,8 +40,20 @@
    align-items: center;
    height: 500px;
    margin-top: 100px ;
-   
   }  
+  .cartel-text{
+    color: yellow;
+    filter: drop-shadow(5px 5px 15px yellow);
+  }
+  .dual-text{
+    color: blue;
+    filter: drop-shadow(5px 5px 15px blue);
+  
+  }
+  .medello-text{
+    color: red;
+    filter: drop-shadow(5px 5px 15px red);
+  }
   .content-text{
     display: flex;
     justify-content:start;
@@ -59,7 +69,22 @@
     text-shadow: 0px 0px 15px #fff;
     margin-top: 20px;
   }
-  
+  .link-discord{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    background-color: #181818;
+    border-radius: 10px;
+    padding: 5px;
+    gap:8px;
+    margin-top: 40px;
+    transition: transform .1s ease-in-out;
+    &:hover
+    {
+      background-color:#1f1e1e;
+    }
+  }
   .content-img{
     display: flex;
     justify-content: center;
@@ -70,19 +95,6 @@
   .img-cartel{
   border-radius: 30px;
   filter: drop-shadow(5px 5px 40px #cc0000);
-  }
-  .cartel-text{
-    color: yellow;
-    filter: drop-shadow(5px 5px 15px yellow);
-  }
-  .dual-text{
-    color: blue;
-    filter: drop-shadow(5px 5px 15px blue);
-  
-  }
-  .medello-text{
-    color: red;
-    filter: drop-shadow(5px 5px 15px red);
   }
   .arrow{
     position: absolute;
@@ -136,20 +148,4 @@
   }
   .text-sobre{
     color: #fff;
-  }
-  .link-discord{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2em;
-    background-color: #181818;
-    border-radius: 10px;
-    padding: 5px;
-    gap:8px;
-    margin-top: 40px;
-    transition: transform .1s ease-in-out;
-    &:hover
-    {
-      background-color:#1b1b1b;
-    }
   }
