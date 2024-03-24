@@ -50,3 +50,19 @@ window.addEventListener('scroll', () => {
     });
 });
 
+document.querySelectorAll('.act').forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.dataset.target;
+      const targetModal = document.getElementById(targetId);
+      targetModal.parentElement.classList.add('visible');
+      targetModal.classList.add('visible');
+    });
+  });
+  
+  document.querySelectorAll('.cerrar').forEach(cerrarButton => {
+    cerrarButton.addEventListener('click', () => {
+      cerrarButton.closest('.content-wd').classList.remove('visible');
+      cerrarButton.parentElement.classList.remove('visible');
+    });
+  });
+  
