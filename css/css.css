@@ -79,6 +79,7 @@ main {
   color: #fff;
   text-shadow: 0px 0px 15px #fff;
   margin-top: 20px;
+  text-wrap: balance;
 }
 
 .link-discord {
@@ -132,26 +133,20 @@ main {
   }
 }
 
-.sobre {
+.sobre,.mienbros-fundadores,.aliansas {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
 }
-.content-info{
+
+.content-info {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 500px;
-  margin-top: 100px;
   gap: 100px;
 }
-
-.poderio {
-  height: 300px;
-  width: 500px;
-  text-align: center;
-}
-
 .operaciones,
 .poderio {
   background-color: rgb(41, 41, 41);
@@ -159,30 +154,35 @@ main {
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 50px rgb(61, 61, 61);
-}
-
-.operaciones {
   height: 300px;
   width: 500px;
   text-align: center;
+  text-wrap: balance;
 }
-
 .title-sobre {
   margin-bottom: 30px;
   color: red;
 }
-
 .text-sobre {
   color: #fff;
 }
 
 .mienbros-fundadores {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.text-mm-im{
+  color: red;
+  font-size:2em;
+  text-align: center;
+}
+.content-mm-div{
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 50px;
 }
-
 .me {
   border: 2px solid #505050;
   border-radius: 30px;
@@ -194,15 +194,18 @@ main {
   box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
 }
 
-.me_dñ{
-  margin-top: 50px;
+.me_dñ {
+  margin-top: 70px;
 }
-.me_jf{
+
+.me_jf {
   margin-top: 200px;
 }
-.me_sj{
+
+.me_sj {
   margin-top: 300px;
 }
+
 .text-dñ {
   color: red;
   font-size: 1.7em;
@@ -224,32 +227,60 @@ main {
   margin-top: 10px;
   filter: drop-shadow(10px 10px 15px rgb(170, 0, 0));
 }
-.list-name{
+
+.list-name {
   display: flex;
   flex-direction: column;
   align-items: start;
   margin: auto;
   margin-top: 10px;
 }
-.nm-me{
+
+.nm-me {
   text-decoration: none;
   list-style: none;
 }
-.icon-mienbro{
+
+.icon-mienbro {
   width: 30px;
   height: 30px;
   border-radius: 100%;
   object-fit: cover;
 }
-.content-mm{
+
+.content-mm {
   display: flex;
   margin-top: 6px;
   gap: 13px;
   align-items: center;
 }
-.text-alianza{
+.text-alianza {
   color: red;
   text-align: center;
   font-size: 2.3em;
-  margin-top:100px;
+  margin: 0
+  0 70px 0;
+}
+
+
+.content-info-sl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.al-info {
+  width: 300px;
+  height: 300px;
+  border-top: 4px solid red;
+  padding: 5px;
+}
+.al-nm{
+  color: yellow;
+}
+.al-cd,.al-text,.al-nm{
+margin-top: 5px;
+text-align: center;
+text-wrap: balance;
 }
