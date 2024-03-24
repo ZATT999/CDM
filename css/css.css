@@ -6,18 +6,18 @@
 }
 
 header {
-  position: fixed;
-  top: 0;
   display: flex;
   width: 100%;
   height: 4em;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(15px);
-  background-color: #1a1a1a;
   z-index: 11;
+  transition: all 1s;
 }
-
+header.header-an{
+  background-color: #161616;
+  position: fixed;
+}
 main {
   align-content: center;
 }
@@ -35,11 +35,32 @@ main {
   height: 30px;
   text-align: center;
   cursor: pointer;
+}
 
-  &:hover {
-    background-color: #c92323;
+@keyframes border-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }
+
+.borde-rojo {
+  position: relative;
+}
+
+.borde-rojo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 0, 0);
+  animation: border-animation 0.9s ease forwards;
+}
+
 
 .inicio {
   display: flex;
