@@ -191,8 +191,7 @@ main {
   display: flex;
   text-align: center;
   flex-direction: column;
-  box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5); /* Color inicial rojo */
-  animation: rotateAndChangeColor 5s infinite alternate; /* Duración de 5 segundos, infinito y alternando */
+  box-shadow: 0 0 10px 5px rgba(255, 0, 0, 0.5);
 }
 
 .me_dñ{
