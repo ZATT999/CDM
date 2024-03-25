@@ -393,3 +393,11 @@ text-wrap: balance;
   display: block;
   transition: all 1s ease;
 }
+.text-content-wd{
+  text-wrap: balance;
+  padding: 30px;
+}
+.title-wd{
+ margin-bottom: 10px;
+ margin-top: 20px;
+}
