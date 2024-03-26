@@ -426,7 +426,7 @@ text-wrap: balance;
   margin:auto;
 }
 .video{
-  display: none;
+  display: block;
 }
 .img-video{
   border-radius: 8px;
