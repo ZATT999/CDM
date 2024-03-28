@@ -338,6 +338,7 @@ header.header-an {
   width: 300px;
   border-top: 4px solid red;
   padding: 10px;
+  background-color: rgb(39, 38, 38);
 }
 
 .al-cd,
@@ -506,7 +507,7 @@ header.header-an {
   .content-links {
     position: absolute;
     width: 100%;
-    bottom: 200px;
+    bottom: 100px;
     left: 0;
     right: 0;
     margin: 0px auto;
@@ -528,5 +529,10 @@ header.header-an {
   }
   .wd{
     width: 90%;
+  }
+  .poderio,.operaciones{
+    border-radius: 0;
+    border-left: none;
+    border-right: none;
   }
 }
