@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+body{
+  zoom:90%;
+}
 
 header {
   display: flex;
